@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="img/t_d.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/lampara.css">
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+
+            <h1>Local Storage</h1>
+            <div class="row">
+                <div class="six columns">
+                    <label for="tweet">Nota:</label>
+                    <form  id="formulario">
+                            <label for="tweet"></label>
+                            <textarea id="tweet" class="u-full-width"></textarea>
+                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+                <div class="six columns">
+                    <h2>Mis Notas</h2>
+                    <div id="lista-tweets"></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div> <!--#contenido-->
+    <div class="lamp">
+        <div class="glass">
+          <div class="lava">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob top"></div>
+            <div class="blob bottom"></div>
+          </div>
+        </div>
+    </div>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+        <feBlend in="SourceGraphic" in2="goo"></feBlend>
+        </filter>
+    </defs>
+    </svg>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
